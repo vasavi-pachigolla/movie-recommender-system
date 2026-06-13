@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>
+Netflix Style Movie Recommender
+</title>
+
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}"
+>
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<h1>🎬 MovieFlix</h1>
+
+</div>
+
+<div class="hero">
+
+<h2>
+Find Movies You'll Love
+</h2>
+
+<form
+action="/recommend"
+method="POST">
+
+<input
+type="text"
+name="movie"
+placeholder="Enter Movie Name"
+required>
+
+<button type="submit">
+Recommend
+</button>
+
+</form>
+
+</div>
+
+{% if recommendations %}
+
+<div class="result">
+
+<h2>
+Recommendations for
+{{movie}}
+</h2>
+
+<div class="movie-grid">
+
+{% for movie in recommendations %}
+
+<div class="card">
+
+<h3>
+{{movie.title}}
+</h3>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</div>
+
+{% endif %}
+
+</body>
+</html>

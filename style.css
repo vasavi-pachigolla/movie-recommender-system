@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#141414;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+.navbar{
+
+    background:black;
+    padding:20px;
+
+    text-align:center;
+}
+
+.navbar h1{
+
+    color:#E50914;
+    font-size:40px;
+}
+
+.hero{
+
+    height:300px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.hero h2{
+
+    margin-bottom:20px;
+
+    font-size:35px;
+}
+
+input{
+
+    width:350px;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:5px;
+
+    font-size:16px;
+}
+
+button{
+
+    padding:12px 25px;
+
+    background:#E50914;
+
+    color:white;
+
+    border:none;
+
+    border-radius:5px;
+
+    cursor:pointer;
+
+    margin-left:10px;
+}
+
+button:hover{
+
+    opacity:0.9;
+}
+
+.result{
+
+    width:90%;
+
+    margin:auto;
+
+    margin-top:30px;
+}
+
+.result h2{
+
+    margin-bottom:20px;
+}
+
+.movie-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+}
+
+.card{
+
+    background:#222;
+
+    height:180px;
+
+    border-radius:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:scale(1.05);
+
+    background:#333;
+}
+
+.card h3{
+
+    color:white;
+}
