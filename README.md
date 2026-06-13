@@ -1,14 +1,14 @@
-🎬 Movie Recommendation System using Machine Learning
+# 🎬 Movie Recommendation Web Application using Collaborative Filtering and Flask
 
-Overview
+## Overview
 
 This project implements a Movie Recommendation Web Application using Collaborative Filtering and Cosine Similarity.
 
 The system recommends movies based on user rating behavior from the MovieLens dataset and provides recommendations through an interactive Flask web interface with a Netflix-style UI.
 
+---
 
-
-Features
+## Features
 
 * Movie recommendation engine
 * Collaborative Filtering
@@ -18,9 +18,9 @@ Features
 * Automatic MovieLens dataset integration
 * Search-based recommendations
 
+---
 
-
-Technologies Used
+## Technologies Used
 
 * Python
 * Flask
@@ -31,8 +31,9 @@ Technologies Used
 * CSS
 * Machine Learning
 
+---
 
-Dataset
+## Dataset
 
 MovieLens Latest Small Dataset
 
@@ -42,7 +43,7 @@ Dataset Statistics:
 * 100,836 Ratings
 * 610 Users
 
-
+---
 
 ## Project Structure
 
@@ -62,22 +63,25 @@ movie-recommendation-system/
 ├── movies.csv
 └── ratings.csv
 
+---
 
-How to Run
+## How to Run
 
-Install Dependencies
+### Install Dependencies
 
 pip install -r requirements.txt
 
-Start Application
+### Start Application
 
 python app.py
 
-Open in Browser
+### Open in Browser
 
 http://127.0.0.1:5000
 
-Example
+---
+
+## Example
 
 Input:
 
@@ -91,7 +95,9 @@ Output:
 * Pirates of the Caribbean
 * Harry Potter
 
- Future Enhancements
+---
+
+## Future Enhancements
 
 * Movie Posters Integration
 * User Authentication
@@ -99,6 +105,10 @@ Output:
 * TMDB API Integration
 * Cloud Deployment
 
- Author
+---
+
+## Author
+
+Pachigolla Vasavi
 
 Pachigolla Vasavi
